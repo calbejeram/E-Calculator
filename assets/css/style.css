@@ -1,0 +1,102 @@
+.container {
+    height: 100vh;
+}
+
+.calculator-container {
+    background-color: black;
+    width: 350px;
+}
+
+/* Button Keys */
+.button-keys {
+    background-color: #262626;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.button-keys:hover {
+    background-color: #9b9b9b;
+}
+
+.button-keys:active {
+    background-color: rgb(74, 73, 73);
+}
+
+
+
+/* Operator Keys */
+.operator-key {
+    color: rgb(7, 255, 7);
+}
+
+/* Equals Button */
+.equals-button {
+    background-color: rgb(7, 255, 7);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.equals-button:hover {
+    background-color: rgb(58, 213, 58);
+}
+
+.equals-button:active {
+    background-color: green;
+}
+
+
+/* Main Label where to display texts */
+#mainLabel {
+    height: 60px;
+    font-size: 2rem;
+}
+
+#subLabel {
+    height: 50px;
+}
+
+
+
+/* Horizontal line */
+hr {
+    color: white;
+}
+
+
+
+/* Invalid Format Used notice */
+.invalid {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    width: fit-content;
+    background-color: #9b9b9b;
+    color: white;
+    padding: 2px 20px;
+    border-radius: 15px;
+    top: 73%;
+    left: 44%;
+    animation: appear 2s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
