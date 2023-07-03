@@ -14,8 +14,9 @@ let deleteButton = document.getElementById('deleteButton').onclick = () => {
         mainLabel.innerText = mainLabel.innerText.slice(0, -1);
     };
 };
+// Main Label
 
-
+// Try and catch for Syntax Error
 
 
 // Equals button or Eval Button
@@ -41,7 +42,15 @@ numberKeys.forEach((key) => {
         pressedKeys = event.target.innerText;
         mainLabel.innerText += pressedKeys;
         document.querySelector('.invalid').style.display = 'none';
+
+
+        if (mainLabel.innerText.length >= 15) {
+            document.querySelector('.invalid').innerText = "Max of 15 char";
+            document.querySelector('.invalid').style.display = 'block';
+        }
     });
+
+    
 });
 
 

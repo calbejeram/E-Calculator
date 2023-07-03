@@ -9,56 +9,55 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="/assets/images/calculator-icon.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/icons8-calculator-48.png" type="image/ icon type">
     <title>E-Calculator</title>
 </head>
 <body>
     <div class="container d-flex align-items-center justify-content-center">
         <div class="calculator-container p-2 rounded-3">
-            <div class="row">
-                <div class="col">
-                    <label id="mainLabel" class="w-100 text-end fw-bold px-3 d-block align-items-center justify-content-center text-white"></label>
-                    <!-- <input id="mainLabel" type="text" readonly> -->
+            <div class="container-labels">
+                <div class="row">
+                    <div class="col">
+                        <label id="mainLabel" class="w-100 text-end fw-bold px-3 d-block align-items-center justify-content-center text-white"></label>
+                        <!-- <input id="mainLabel" type="text" readonly> -->
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <label id="subLabel" class="w-100 text-end fs-3 px-3 d-block align-items-center justify-content-center text-secondary"></label>
+                <div class="row">
+                    <div class="col">
+                        <label id="subLabel" class="w-100 text-end fs-3 px-3 d-block align-items-center justify-content-center text-secondary"></label>
+                    </div>
                 </div>
-            </div>
-            <div class="row">   
-                <div class="col-6"><button class="btn btn-secondary text-end text-white w-100 border-0" id="deleteButton"><i class="bi bi-backspace"></i></button></div>
             </div>
             <hr>
             <div class="row g-1 mb-1">
-                <div class="col-3"><button class="button-keys text-danger" id="clearButton">C</button></div>
-                <div class="col-3"><button class="operator-key button-keys" id="open_closeParenthesis">( )</button></div>
-                <div class="col-3"><button class="operator-key button-keys" id="modulos">%</button></div>
-                <div class="col-3"><button class="operator-key button-keys" id="divide">/</button></div>
+                <div class="col-3"><button class="button-keys text-danger" id="clearButton" title="Clear">C</button></div>
+                <div class="col-3"><button class="button-keys" id="deleteButton" title="Delete" style="color: rgb(7, 255, 7);"><i class="bi bi-backspace"></i></button></div>
+                <div class="col-3"><button class="operator-key button-keys" id="modulos" title="Modulos">%</button></div>
+                <div class="col-3"><button class="operator-key button-keys" id="divide" title="Divide">/</button></div>
             </div>
             <div class="row g-1 mb-1">
                 <div class="col-3"><button class="number-keys button-keys">7</button></div>
                 <div class="col-3"><button class="number-keys button-keys">8</button></div>
                 <div class="col-3"><button class="number-keys button-keys">9</button></div>
-                <div class="col-3"><button class="operator-key button-keys" id="operator multiply-operator">*</button></div>
+                <div class="col-3"><button class="operator-key button-keys" id="operator multiply-operator" title="Multiply">*</button></div>
             </div>
             <div class="row g-1 mb-1">
                 <div class="col-3"><button class="number-keys button-keys">4</button></div>
                 <div class="col-3"><button class="number-keys button-keys">5</button></div>
                 <div class="col-3"><button class="number-keys button-keys">6</button></div>
-                <div class="col-3"><button class="operator-key button-keys" id="operator subtract-operator">-</button></div>
+                <div class="col-3"><button class="operator-key button-keys" id="operator subtract-operator" title="Subtract">-</button></div>
             </div>
             <div class="row g-1 mb-1">
                 <div class="col-3"><button class="number-keys button-keys">1</button></div>
                 <div class="col-3"><button class="number-keys button-keys">2</button></div>
                 <div class="col-3"><button class="number-keys button-keys">3</button></div>
-                <div class="col-3"><button class="operator-key button-keys" id="operator addition-operator">+</button></div>
+                <div class="col-3"><button class="operator-key button-keys" id="operator addition-operator" title="Addition">+</button></div>
             </div>
             <div class="row g-1 mb-1">
                 <div class="col-3"><button class="button-keys" id="positive-negative-operator">+/-</button></div>
                 <div class="col-3"><button class="number-keys button-keys" id="numberZero">0</button></div>
-                <div class="col-3"><button class="number-keys button-keys" id="numberDecimalPoint">.</button></div>
-                <div class="col-3"><button class="equals-button" id="operator equal-operator">=</button></div>
+                <div class="col-3"><button class="number-keys button-keys" id="numberDecimalPoint" title="Decimal Point">.</button></div>
+                <div class="col-3"><button class="equals-button" id="operator equal-operator" title="Calculate">=</button></div>
             </div>
             <p class="invalid"></p>
         </div>

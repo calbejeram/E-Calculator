@@ -7,6 +7,11 @@
     width: 350px;
 }
 
+.container-labels {
+    background-color: #121416;
+    border-radius: 5px;
+}
+
 /* Button Keys */
 .button-keys {
     background-color: #262626;
@@ -61,6 +66,7 @@
 
 #subLabel {
     height: 50px;
+    overflow: hidden;
 }
 
 
@@ -87,6 +93,14 @@ hr {
     animation: appear 2s;
 }
 
+.pump {
+    display: block;
+    color: green;
+    animation: pump 1s infinite;
+}
+
+
+/* ANIMATIONS */
 @keyframes appear {
     0% {
         opacity: 0;
@@ -97,6 +111,13 @@ hr {
     }
 
     100% {
+        opacity: 0;
+    }
+}
+
+
+@keyframes pump {
+    0% {
         opacity: 0;
     }
 }
